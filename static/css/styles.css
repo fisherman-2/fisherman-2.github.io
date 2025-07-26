@@ -1,0 +1,76 @@
+body {
+  font-family: 'Comic Sans MS', cursive, sans-serif;
+  background-color: #16281d;
+  margin: 0;
+  padding: 0;
+  color : #ffe066;
+  animation: fadeIn 1s ease-in-out;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #22543d;
+}
+
+.music {
+  max-width: 240px;
+  max-height: 120px;
+}
+
+/* mini audio player that will be on the bottom left */
+.music-player {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  padding: 10px;
+  background-color: #22543d;
+  transition: 0.2s ease-in-out;
+  width: 26px;
+  height: 27px;
+}
+
+.music-player:hover {
+  width: 240px;
+  height: 120px;
+  padding-top: 5px;
+  height: 170px;
+}
+
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: #ffe066; 
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  transition: background 0.2s, color 0.2s;
+}
+
+li a:hover {
+  background-color: #2f855a;
+  color: #fff;
+}
+
+ul {
+  box-shadow: 0 2px 8px rgba(34, 84, 61, 0.15);
+}
+
+.logo {
+  margin-top: -30px;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
